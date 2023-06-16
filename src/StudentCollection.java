@@ -15,21 +15,5 @@ public class StudentCollection <T>{
         public T getItems(int index) {
             return items[index];
         }
-    public Iterator<T> iterator() {
-        return new InterableClass(this);
-    }
-    private class InterableClass implements Iterator<T>{
-        private StudentCollection<T> list;
-        private int count;
-        public InterableClass(StudentCollection<T> list)
-        {
-            this.list=list;
-        }
-        public boolean hasNext(){
-            return count< list.count;
-        }
-        public T next(){
-            return list.items[count++];
-        }
-    }
+
     }

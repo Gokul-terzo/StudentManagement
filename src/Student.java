@@ -27,24 +27,16 @@ public class Student extends StudentCollection<Student>{
     public void setStudentName(String studentName) {
         this.studentName = studentName;
     }
-    public void addStudent(String name,String id,ArrayList<Integer> mark) {
-        setItems(new Student(name,id,mark));
-    }
     public void getItem(int index) {
         Student n=getItems(index);
         System.out.println(n.studentId);
     }
-    public Student checkID(String ID){
-        int l=getCount();
-        System.out.println(l);
-        Student n;
-        for(int i=0;i<l;i++)
-        {
-            n=getItems(i);
-            System.out.println(n.studentId);
-            if(n.studentId.equals(ID))
-                return n;
-        }
-        return null;
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public ArrayList<Integer> getMarks() {
+        return marks;
     }
 }
