@@ -12,9 +12,7 @@ public class Student extends StudentCollection<Student>{
         studentName=name;
         marks=mark;
     }
-    public String getStudentName() {
-        return studentName;
-    }
+
 
     public void setMarks(ArrayList<Integer> marks) {
         this.marks = marks;
@@ -26,10 +24,6 @@ public class Student extends StudentCollection<Student>{
 
     public void setStudentName(String studentName) {
         this.studentName = studentName;
-    }
-    public void getItem(int index) {
-        Student n=getItems(index);
-        System.out.println(n.studentId);
     }
 
     public String getStudentId() {
