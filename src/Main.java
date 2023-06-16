@@ -76,11 +76,12 @@ public class Main{
             try {
                 if(num<0)
                     throw new MyException("Invalid mark!");
+                l.add(num);
             }
             catch (MyException e){
                 System.out.println(e.getMessage());
             }
-            l.add(num);
+
         }
         student.setMarks(l);
         s.setItems(student);
